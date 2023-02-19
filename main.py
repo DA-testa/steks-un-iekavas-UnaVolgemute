@@ -28,13 +28,9 @@ def find_mismatch(text):
 
 
 def main():
-    i = input()
-    if ("I" in i):
-        text = input()
-    elif ("F" in i):
-        print()
-    else:
-        return
+    text = input()
+    if text[0] == "I":
+      text = input()
     mismatch = find_mismatch(text)
     # Printing answer, write your code here
     if mismatch == 0:
