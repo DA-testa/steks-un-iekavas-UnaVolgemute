@@ -39,4 +39,5 @@ def main():
         print(mismatch)
 
 if __name__ == "__main__":
+    input("I")
     main()
