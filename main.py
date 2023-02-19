@@ -28,13 +28,19 @@ def find_mismatch(text):
 
 
 def main():
-    text = input()
-    if text[0] == "I":
-      text = input()
+    i = input()
+    if ("I" in i):
+        text = input()
+    elif ("F" in i):
+        print()
+    else:
+        return
     mismatch = find_mismatch(text)
     # Printing answer, write your code here
-    print (mismatch)
-    
+    if mismatch == 0:
+        print("Success")
+    else:
+        print(mismatch)
 
 if __name__ == "__main__":
     main()
