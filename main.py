@@ -22,7 +22,7 @@ def find_mismatch(text):
             if not opening_brackets_stack or not are_matching(opening_brackets_stack[-1].char, next):
                 return i+1
         if opening_brackets_stack:
-          return opening_brackets_stack[0].position
+            return opening_brackets_stack[0].position
         return "Success"
         pass
 
@@ -31,7 +31,7 @@ def main():
     text = input()
     if text[0] == "I":
       text = input()
-      mismatch = find_mismatch(text)
+    mismatch = find_mismatch(text)
     # Printing answer, write your code here
     print (mismatch)
     
