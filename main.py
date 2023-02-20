@@ -29,8 +29,13 @@ def find_mismatch(text):
 
 def main():
     cmd = input()
-    if cmd[0] == "I":
+    if ("I" in cmd):
         text = input()
+    elif ("F" in cmd):
+        print()
+    else:
+        return
+    
     mismatch = find_mismatch(text)
     # Printing answer, write your code here
     if mismatch == 0:
